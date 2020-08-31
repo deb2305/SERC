@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Regular Expressions</title>
+</head>
+<body>
+<script type="text/javascript">
+	function check(inputvalue)
+	 {
+	 	var a = /^[A-Za-z]+$/;
+		if(inputvalue.value.match(a))
+		{
+			alert("Success");
+		}
+		else
+		{
+			alert("Only alphabets are allowed");
+
+		}
+	}
+</script>
+<h3>Enter Your Name:-</h3>
+<input type="text" id="inputvalue" name="Name">
+<button onclick="check(inputvalue);">Register</button>
+</body>
+</html>
