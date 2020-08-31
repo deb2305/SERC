@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration</title>
+</head>
+<body>
+    <script type="text/javascript">
+    function check(inputvalue)
+     {
+        var a = /^[0-9]+$/;
+        if(inputvalue.value.match(a))
+        {
+            alert("Success");
+        }
+        else
+        {
+            alert("Only numbers are allowed");
+
+        }
+    }
+</script>
+<h3>Enter Your Phone Number:-</h3>
+ <input type="number" maxlength="10" required>
+                        
+                        
+               
+
+ 
+ <button onclick="myFunction()">VERIFY</button>
+
+<script>
+function myFunction() {
+  alert("NUMBER IS VERIFIED");
+}
+</script>
+ 
+<form action="file:///C:/Users/DEBMALYA%20HALDER/OneDrive/Desktop/rdip/details.html" method="get" target="_blank">
+
+    
+    <label for="Reason for RDIP:"><b>Subject Interests:</b></label>
+    <input type="checkbox" name="Reason for RDIP" id="Reason for RDIP" Value="HTML" required>
+    <label for="Reason for RDIP"><b>HTML</b></label>
+    <input type="checkbox" name="Reason for RDIP" id="Reason for RDIP" Value="CSS" required>
+    <label for="Reason for RDIP"><b>CSS</b></label>
+    <input type="checkbox" name="Reason for RDIP" id="Reason for RDIP" Value="JavaScript" required>
+    <label for="Reason for RDIP"><b>JavaScript</b></label><br><br>
+    
+     <input type="submit" value="Register">
+
+</form>
+
+</body>
+</html>
