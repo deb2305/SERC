@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html><head><!--Google Tag Manager--><script class="gtm">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&amp;l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W59SWTR');</script><!--End Google Tag Manager-->
+<link href="basicControlFlow.css" rel="stylesheet" type="text/css"/>
+<link href="http://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/>
+<script src="basicControlFlow.js" type="text/javascript"></script>
+<title>Computer-Programming</title>
+</head>
+
+<body><!--Google Tag Manager (noscript)--><noscript class="gtm"><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-W59SWTR" style="display:none;visibility:hidden" width="0"></iframe></noscript><!--End Google Tag Manager (noscript)-->
+<div id="header"> Basic Control Flow </div>
+<a href="../../simulation.html"><div class="vlabsIcon"></div></a>
+
+<div class="inputDivision">
+	<div class="inputDivisionTitle"><div class="initializePic"></div><div class="initializeText">Initialize</div></div>
+	<div class="inputDivisionBody">
+		<div class="instructionText marginTop"> x1 = 050;   y1 = 050;</div>
+		<div class="instructionText"> x2 = 250;   y2 = 050;</div>
+		<div class="instructionText"> x3 = 250;   y3 = 300;</div>
+		<div class="instructionText"> x4 = 050;   y4 = 300;</div>
+		<div class="DayInputText"><label class="dText">X : </label><input class="textField" id="textFieldXId" type="text" value="150"/></div>
+		<div class="DayInputText"><label class="dText">Y : </label><input class="textField" id="textFieldYId" type="text" value="150"/></div>
+        <div class="listDivision margin15">
+			<select class="button expList" id="loopList" name="expression_input_list">
+     		<option>select code</option>
+     		<option id="ifElseList" value="ifElseList">if-else-code</option>
+            <option id="ifElseIfList" value="ifElseIfList">if-else-if-code</option>
+        	</select>
+        </div>
+		<div class="okButtonDivision margin15">
+       		<button class="button okButton" id="okBtnId">Ok</button>
+   		</div>
+		<button class="buttonDisable startButton margin15" disabled="" id="startBtnId">Start</button>
+		<button class="button stopButton margin15 hide" id="stopBtnId">Stop</button>
+		<button class="buttonDisable nextButton margin15" disabled="" id="nextBtnId">Next</button>
+		<div class="instructionText marginTop">Local Variable : </div>
+		<div>
+			<div class="flag_text">
+				<span id="flag1Id"></span><span id="flagValue1"></span>   
+				<span id="flag2Id"></span><span id="flagValue2"></span> 
+			</div>
+			<div class="flag_text">
+				<span id="flag3Id"></span><span id="flagValue3"></span>   
+				<span id="flag4Id"></span><span id="flagValue4"></span>  
+			</div>
+		</div>
+		<div class="flag_text">
+			<span>x = </span><span id="xInnerText"></span>     
+			<span>y = </span><span id="yInnerText"></span>
+		</div>
+	</div>
+</div>
+<div class="executionDivision">
+	<div class="executionDivisionTitle"><div class="executionPic"></div><div class="executionText">Step Execution</div></div>
+	<div class="stepExecutionDisplay" id="ifElseCode">
+		<div class="hide" id="codeContentIfElse1Id">void main() {</div>
+		<div class="hide" id="codeContentIfElse2Id"> int flag_1, flag_2, flag_3, flag_4;</div>
+		<div class="hide" id="codeContentIfElse3Id"> flag_1 = flag_2 = flag_3 = flag_4 = 0;</div>
+		<div class="hide" id="codeContentIfElse4Id"> if ( X &gt;= x1 )</div>
+		<div class="hide" id="codeContentIfElse5Id"> {</div>
+		<div class="hide" id="codeContentIfElse6Id">  flag_1 = 1;</div>
+		<div class="hide" id="codeContentIfElse7Id"> }</div>
+		<div class="hide" id="codeContentIfElse8Id"> if ( X &lt;= x2 )</div>
+		<div class="hide" id="codeContentIfElse9Id"> {</div>
+		<div class="hide" id="codeContentIfElse10Id">  flag_2 = 1;</div>
+		<div class="hide" id="codeContentIfElse11Id"> }</div>
+		<div class="hide" id="codeContentIfElse12Id"> if ( Y &gt;= y1 )</div>
+		<div class="hide" id="codeContentIfElse13Id"> {</div>
+		<div class="hide" id="codeContentIfElse14Id">  flag_3 = 1;</div>
+		<div class="hide" id="codeContentIfElse15Id"> }</div>
+		<div class="hide" id="codeContentIfElse16Id"> if ( Y &lt;= y4 )</div>
+		<div class="hide" id="codeContentIfElse17Id"> {</div>
+		<div class="hide" id="codeContentIfElse18Id">  flag_4 = 1;</div>
+		<div class="hide" id="codeContentIfElse19Id"> }</div>
+		<div class="hide" id="codeContentIfElse20Id"> if ( flag_1 &amp;&amp; flag_2 &amp;&amp; flag_3 &amp;&amp; flag_4 ) </div>
+		<div class="hide" id="codeContentIfElse21Id"> {</div>
+		<div class="hide" id="codeContentIfElse22Id">  printf ( "INSIDE" );</div>
+		<div class="hide" id="codeContentIfElse23Id"> }</div>
+		<div class="hide" id="codeContentIfElse24Id"> else</div>
+		<div class="hide" id="codeContentIfElse25Id"> {</div>
+		<div class="hide" id="codeContentIfElse26Id">  printf ( "OUTSIDE" );</div>
+		<div class="hide" id="codeContentIfElse27Id"> }</div>
+		<div class="hide" id="codeContentIfElse28Id">}</div>
+	</div>
+	<div class="stepExecutionDisplay" id="ifElseIfCode">
+		<div class="hide" id="codeContentIfElseIf1Id">void main() {</div>
+		<div class="hide" id="codeContentIfElseIf2Id"> int flag;</div>
+		<div class="hide left13" id="codeContentIfElseIf3Id"> if ( </div>
+		<div class="hide left15" id="codeContentIfElseIf3aId">X &lt; x1</div>
+		<div class="hide left5" id="codeContentIfElseIf3bId">||</div>
+		<div class="hide left15" id="codeContentIfElseIf3cId">X &gt; x2</div>
+		<div class="hide" id="codeContentIfElseIf3dId">)</div>
+		<div class="hide left40" id="codeContentIfElseIf4Id"> {</div>
+		<div class="hide" id="codeContentIfElseIf5Id">  flag = 0;</div>
+		<div class="hide" id="codeContentIfElseIf6Id"> }</div>
+		<div class="hide left20" id="codeContentIfElseIf7Id"> else if (</div>
+		<div class="hide left15" id="codeContentIfElseIf7aId">Y &lt; y1</div>
+		<div class="hide left5" id="codeContentIfElseIf7bId">||</div>
+		<div class="hide left15" id="codeContentIfElseIf7cId">Y &gt; y4</div>
+		<div class="hide" id="codeContentIfElseIf7dId">)</div>
+		<div class="hide left40" id="codeContentIfElseIf8Id"> {</div>
+		<div class="hide" id="codeContentIfElseIf9Id">  flag = 0;</div>
+		<div class="hide" id="codeContentIfElseIf10Id"> }</div>
+		<div class="hide" id="codeContentIfElseIf11Id"> else</div>
+		<div class="hide" id="codeContentIfElseIf12Id"> {</div>
+		<div class="hide" id="codeContentIfElseIf13Id">  flag = 1;</div>
+		<div class="hide" id="codeContentIfElseIf14Id"> }</div>
+		<div class="hide" id="codeContentIfElseIf15Id"> if ( flag == 1 )</div>
+		<div class="hide" id="codeContentIfElseIf16Id"> {</div>
+		<div class="hide" id="codeContentIfElseIf17Id">  printf ( "INSIDE" );</div>
+		<div class="hide" id="codeContentIfElseIf18Id"> }</div>
+		<div class="hide" id="codeContentIfElseIf19Id"> else</div>
+		<div class="hide" id="codeContentIfElseIf20Id"> {</div>
+		<div class="hide" id="codeContentIfElseIf21Id">  printf ( "OUTSIDE" );</div>
+		<div class="hide" id="codeContentIfElseIf22Id"> }</div>
+		<div class="hide" id="codeContentIfElseIf23Id">}</div>
+	</div>
+</div>
+<div class="outputDivision"> 
+	<div class="outputDivisionTitle"><div class="outputPic"></div><div class="outputText">Code Output</div></div>
+	<div class="resultDisplay" id="resultDisplay">
+		<div class="canvasDiv" id="canvasDiv1">
+			<canvas class="myCanvas" height="400" id="myCanvas" width="350"></canvas> 
+		</div>
+	</div>
+</div>
+
+</body></html>
