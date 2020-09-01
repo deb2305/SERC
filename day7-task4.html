@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body bgcolor="teal">
+
+<p>Please input a number :</p>
+
+<input id="table" type="text">
+<button type="button" onclick="myFunction()">Test Input</button>
+<p id="numb"></p>
+
+<script>
+function myFunction() {
+  var message, x;
+  message = document.getElementById("numb");
+  message.innerHTML = "";
+  x = document.getElementById("table").value;
+  try { 
+    if(x == "")  throw "empty";
+    if(isNaN(x)) throw "not a number";
+    x = Number(x);
+    if(x % 6==0)  throw "NUMBER IS MULTIPLE OF 6";
+    if(x % 6!=0)   throw "NUMBER IS NOT MULTIPLE OF 6";
+  }
+  catch(err) {
+    message.innerHTML = " " + err;
+  }
+}
+</script>
+
+</body>
+</html>
