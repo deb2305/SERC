@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- CSS only -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+      
+    <link rel="stylesheet" type="text/css" 
+            href="css/bootstrap.min.css"> 
+  
+    <script src="js/bootstrap.min.js"></script> 
+
+</head>
+<body onload="myPage()" bgcolor="white">
+	<font color="black" height="5">
+<div class="container"> 
+<h1>Online Banking Portal</h1>
+
+<script>
+function myPage() {
+  alert("Page is loaded");
+}
+</script>
+<img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRi_pyfuzvk5sVoQQIgEbgB4aiu72T0Rllxxg&usqp=CAU" alt="Smiley" width="120" height="120" style= float:right>
+
+
+
+<script>
+function bigImg(x) {
+  x.style.height = "150px";
+  x.style.width = "150px";
+}
+
+function normalImg(x) {
+  x.style.height = "80px";
+  x.style.width = "80px";
+}
+</script>
+
+
+
+<p float :right>IF YOU DON'T KNOW WHAT TIME IT IS.</p>
+
+<button onclick="displayDate()">Time</button>
+<p id="time"></p>
+<script>
+function displayDate() {
+  document.getElementById("time").innerHTML = Date();
+}
+</script>
+<form>
+	<form>
+  <label for="fname">USERNAME:</label><br>
+  <input type="text" id="fname" name="fname" required><br>
+</form>
+  
+
+<p>PASSWORD:</p>
+
+<input type="text" onkeydown="myFunc()">
+
+<script>
+function myFunc() {
+  alert("You pressed a key inside the input field");
+}
+</script>
+
+<p>Select a bank from the list.</p>
+
+<p id="bank"></p>
+ 
+<script>
+function myBank() {
+  var x = document.getElementById("mySelect").value;
+  document.getElementById("bank").innerHTML = "You selected: " + x;
+}
+</script>
+
+<select id="mySelect" onchange="myBank()"> -->
+   <option value="sbi">SBI</option> -->
+   <option value="yes bank">YES BANK</option> -->
+  <option value="kotak">KOTAK</option>
+  <option value="rbl">RBL</option>
+</select>
+<br><br>
+<button type="submit" form="nameform" value="Submit">Submit</button>
+<br><br><br>
+
+<p>-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <h3>ONLINE BANKING</h3>
+      <p>Online banking allows a user to conduct financial transactions via the Internet. Online banking is also known as Internet banking or web banking</p>
+      <p>Online banking offers customers almost every service traditionally available through a local branch including deposits, transfers, and online bill payments.</p>
+    </div>
+    <div class="col-sm-4">
+      <h3>ABOUT US</h3>
+      <p>We are one of the leadinf firm in this sector </p>
+      <p>We are working in this sector from 2014</p>
+    </div>
+    <div class="col-sm-4">
+      <h3>OUR PARTNERS</h3>        
+      <p>YES BANK , SBI </p>
+      <p>RBL BANK, KOTAK</p>
+    </div>
+  </div>
+
+</div>
+
+
+</body>
+</html>
