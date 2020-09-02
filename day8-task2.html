@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>hide & show demo</title>
+  <style>
+  span {
+    background: #def3ca;
+    padding: 3px;
+    float: left;
+  }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+</head>
+<body>
+ 
+<button id="hider">Hide</button>
+<button id="shower">Show</button>
+<div>
+  <span>Hello</span> <span>World!</span> <span>STAY</span>
+  <span>STRONG.</span> <span>This</span> <span>Shall</span>
+  <span>too</span> <span>pass...</span>
+</div>
+ 
+<script>
+$( "#hider" ).click(function() {
+  $( "span:last-child" ).hide( "fast", function() {
+    
+    $( this ).prev().hide( "fast", arguments.callee );
+  });
+});
+$( "#shower" ).click(function() {
+  $( "span" ).show( 2000 );
+});
+</script>
+ 
+</body>
+</html>
