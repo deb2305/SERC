@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html><head><!--Google Tag Manager--><script class="gtm">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&amp;l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W59SWTR');</script><!--End Google Tag Manager-->
+<link href="basicControlFlow.css" rel="stylesheet" type="text/css"/>
+<!-- &lt;link href='http://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'&gt; -->
+<script src="basicControlFlow.js" type="text/javascript"></script>
+<title>Computer-Programming</title>
+</head>
+
+<body><!--Google Tag Manager (noscript)--><noscript class="gtm"><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-W59SWTR" style="display:none;visibility:hidden" width="0"></iframe></noscript><!--End Google Tag Manager (noscript)-->
+<div id="header">Basic Control Flow</div>
+<a href="../../simulation.html"><div class="vlabsIcon"></div></a>
+
+<div class="inputDivision">
+	<div class="inputDivisionTitle"><div class="initializePic"></div><div class="initializeText">Initialize</div></div>
+	<div class="inputDivisionBody">
+		<div class="instructionText"> Select the Day :</div>
+		<div class="radioButtonHolder"><input class="radiobutton" id="radioBtn1Id" name="day_radio" type="radio" value="1"/>
+		<label class="radioText" for="day_radio">DAY : 1</label></div>
+		<div class="radioButtonHolder"><input class="radiobutton" id="radioBtn2Id" name="day_radio" type="radio" value="2"/><label class="radioText" for="day_radio">DAY : 2</label></div>
+		<div class="radioButtonHolder"><input class="radiobutton" id="radioBtn3Id" name="day_radio" type="radio" value="3"/><label class="radioText" for="day_radio">DAY : 3</label></div>
+		<div class="radioButtonHolder"><input class="radiobutton" id="radioBtn4Id" name="day_radio" type="radio" value="4"/><label class="radioText" for="day_radio">DAY : 4</label></div>
+		<div class="radioButtonHolder"><input class="radiobutton" id="radioBtn5Id" name="day_radio" type="radio" value="5"/><label class="radioText" for="day_radio">DAY : 5</label></div>
+		<div class="radioButtonHolder"><input class="radiobutton" id="radioBtn6Id" name="day_radio" type="radio" value="6"/><label class="radioText" for="day_radio">DAY : 6</label></div>	
+		<div class="radioButtonHolder"><input class="radiobutton" id="radioBtn7Id" name="day_radio" type="radio" value="7"/><label class="radioText" for="day_radio">DAY : 7</label></div>
+		<div class="DayInputText"><label class="dText">DAY : </label><input class="textField" id="textFieldId" type="text"/></div>
+		<button class="button margin15" id="submitBtnId">Submit Day</button>
+		<button class="buttonDisable margin15" disabled="" id="startBtnId">Start</button>
+		<button class="button margin15 hide" disabled="" id="nextBtnId">Next</button>
+		<button class="button margin15 hide" disabled="" id="resetBtnId">Reset</button>
+	</div>
+</div>
+<div class="executionDivision">
+	<div class="executionDivisionTitle"><div class="executionPic"></div><div class="executionText">Step Execution</div></div>
+	<div class="stepExecutionDisplay" id="switchCaseId">
+		<div id="mainId"> main() {</div>
+		<div id="charId"> char* str;</div>
+		<div id="strId"> str = null;</div>
+		<div id="switchId"> switch (DAY) {</div>
+                <div id="case1Id">  case 1 : str = 'Monday';</div>
+		<div class="break" id="case1BreakId">   break;</div>
+		<div id="case2Id">  case 2 : str = 'Tuesday';</div>
+		<div class="break" id="case2BreakId">   break;</div>
+		<div id="case3Id">  case 3 : str = 'Wednesday';</div>
+		<div class="break" id="case3BreakId">   break;</div>
+		<div id="case4Id">  case 4 : str = 'Thursday';</div>
+		<div class="break" id="case4BreakId">   break;</div>
+		<div id="case5Id">  case 5 : str = 'Friday';</div>
+		<div class="break" id="case5BreakId">   break;</div>
+		<div id="case6Id">  case 6 : str = 'Saturday';</div>
+		<div class="break" id="case6BreakId">   break;</div>
+		<div id="case7Id">  case 7 : str = 'Sunday';</div>
+		<div class="break" id="case7BreakId">   break;</div>
+		<div id="defaultId">  default : str = null;</div>
+		<div class="break" id="defaultBreakId">   break; </div>
+		<div id="closeBrc1Id"> }</div>
+		<div id="ifId"> if (str == 'Sunday') {</div>
+		<div id="holidayId">  printf ( 'HOLIDAY' ); }</div>
+		<div id="elseIfId"> else if ( str != null ) {</div>
+		<div id="workingdayId">  printf ( 'WORKING DAY' ); }</div>
+		<div id="elseId"> else {</div>
+		<div id="invalidIPId">  printf ('INVALID INPUT'); }</div>
+                <div id="returnId"> return 0;
+		<div id="closeBrc2Id">}</div>
+		<div id="endOfCodeId"></div>
+	</div>
+</div>
+<div class="outputDivision"> 
+	<div class="outputDivisionTitle"><div class="outputPic"></div><div class="outputText">Code Output</div></div>
+	<div class="resultDisplay" id="resultDisplay">
+		<div class="imageBlock" id="dayImage">
+			<div class="workingDayImage" id="workingdayImage"></div>
+			<div class="relaxDayImage" id="holidayImage"></div>
+		</div>
+		<div class="dayIconDivision" id="dayIcon">
+		 	<div class="mondayIcon" id="mondayImages"></div>
+		 	<div class="tuesdayIcon" id="tuesdayImages"></div>
+		 	<div class="wednesdayIcon" id="wednesdayImages"></div>
+		 	<div class="thursdayIcon" id="thursdayImages"></div>
+		 	<div class="fridayIcon" id="fridayImages"></div>
+		 	<div class="saturdayIcon" id="saturdayImages"></div>
+		 	<div class="sundayIcon" id="sundayImages"></div>
+		</div>
+		<div class="localVariabals">
+		<div class="localVariableText">str : </div><div class="localVariableValue" id="strNullId"></div>
+		<div class="localVariableText">day : </div><div class="localVariableValue" id="idOfDay"></div>
+		<div class="localVariableText">output : </div><div class="localVariableValue" id="outputDayId"></div>
+		</div>
+	</div>
+</div>
+
+</body></html>
