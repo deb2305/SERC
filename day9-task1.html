@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>jQuery Double Click</title>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("div").dblclick(function(){
+    $( this ).toggleClass("divClass2");
+  });
+});
+</script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("h2").toggle();
+  });
+});
+</script>
+<script>
+$(document).ready(function(){
+  $(".btn1").click(function(){
+    $("h1").fadeOut();
+  });
+  $(".btn2").click(function(){
+    $("h1").fadeIn();
+  });
+});
+</script>
+ 
+<style> 
+.divClass1
+{
+    padding:5px;
+    text-align:center;
+    background-color:Teal;
+    border:solid 1px;
+}
+.divClass2
+{
+    padding:5px;
+    text-align:center;
+    background-color:#0be6df;
+    border:solid 1px;
+}
+body {
+  background-image: url("https://images.unsplash.com/photo-1553095066-5014bc7b7f2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80");
+    
+    } 
+
+h1 {
+  color: white;
+  text-align: left;
+}
+
+h2 {
+  font-family: verdana;
+  font-size: 20px;
+  color: #e6a40b;
+}
+</style>
+</head>
+<body>
+<div class="divClass1">Introduction</div>
+
+<h1 >NAME-</h1><h2>Debmalya Halder</h2>
+<h1>COLLEGE-</h1><h2>Dayananda Sagar College Of Engineering</h2>
+<h1>STREAM-</h1><h2>Electronics And Telecommunication Engineering</h2>
+
+<button class="btn1">Fade out</button>
+<button class="btn2">Fade in</button>
+<button>Toggle between hide() and show()</button>
+</body>
+</html>
