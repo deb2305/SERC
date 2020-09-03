@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html><head><!--Google Tag Manager--><script class="gtm">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&amp;l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W59SWTR');</script><!--End Google Tag Manager-->
+<link href="functions.css" rel="stylesheet" type="text/css"/>
+<link href="http://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css"/>
+<title>Computer-Programming</title>
+<script src="function.js" type="text/javascript"></script>
+</head>
+
+<body><!--Google Tag Manager (noscript)--><noscript class="gtm"><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-W59SWTR" style="display:none;visibility:hidden" width="0"></iframe></noscript><!--End Google Tag Manager (noscript)-->
+<div id="header">Functions</div>
+<a href="../index.html"><div class="vlabsIcon"></div></a>
+
+<div class="inputDivision">
+	<div class="inputDivisionTitle"><div class="initializePic"></div><div class="initializeText">Initialize</div></div>
+	<div class="inputDivisionBody" id="inputDivision">
+		  <div class="questionBlock" id="instructions">
+           <p class="instruction">1. Click on the square to define a function for calculating the area of a square.</p>
+           <p class="instruction">2. Similarly define functions for the other geometrical figures.</p>
+           <p class="instruction">3. The defined functions are shown in the middle window.</p>
+           <p class="instruction">4. Now make appropriate function calls in the main program to compute the area of the figure displayed.</p>
+           <p class="instruction">5. Press execute to execute the code and see the output.</p>
+        </div><!-- end of instructions -->
+		<div class="questionBlock hide" id="questionSquare">
+			<div class="questionText">1. Enter number of arguments :</div>
+			<div class="radioButtonHolder"><input class="radiobutton" name="radio_group1" type="radio" value="1"/><label class="radioText">1</label></div>
+			<div class="radioButtonHolder"><input class="radiobutton" name="radio_group1" type="radio" value="2"/><label class="radioText">2</label></div>
+			<div class="radioButtonHolder"><input class="radiobutton" name="radio_group1" type="radio" value="3"/><label class="radioText">3</label></div><!-- end of 1st question -->	
+
+			<div class="questionText">2. Enter datatype of arguments :</div>
+			<div class="radioButtonHolder"><input class="radiobutton" name="radio_group2" type="radio" value="int"/><label class="radioText">int</label></div>
+			<div class="radioButtonHolder"><input class="radiobutton" name="radio_group2" type="radio" value="float"/><label class="radioText">float</label></div><!-- end of 2ns question -->	
+
+			<div class="questionTextRich">3. Enter return datatype of the function :</div>
+			<div class="radioButtonHolder"><input class="radiobutton" name="radio_group3" type="radio" value="int"/><label class="radioText">int</label></div>
+			<div class="radioButtonHolder"><input class="radiobutton" name="radio_group3" type="radio" value="float"/><label class="radioText">float</label></div><!-- end of 3rd question -->	
+
+			<div class="questionTextRich">4. Choose formula for area of the square :</div>
+			<div class="radioButtonHolder"><input class="radiobutton" name="radio_group4" type="radio" value="a*a"/><label class="radioText">a*a</label></div>
+			<div class="radioButtonHolder"><input <label="" class="radiobutton" name="radio_group4" type="radio" value="π*a*a"/>π*a*a</div>
+			<div class="radioButtonHolder"><input class="radiobutton" name="radio_group4" type="radio" value="2*π*a"/><label class="radioText">2*π*a</label></div><!-- end of 4th question -->	
+
+			<button class="button okButton" id="okSquare">OK</button>	
+		</div><!-- end of question block of square -->	
+		<div class="questionBlock hide" id="questionRightAngleTriangle">
+			<div class="questionText">1. Enter number of arguments :</div>
+			<div class="radioButtonHolder"><input class="radiobutton" name="radio_group5" type="radio" value="1"/><label class="radioText">1</label></div>
+			<div class="radioButtonHolder"><input class="radiobutton" name="radio_group5" type="radio" value="2"/><label class="radioText">2</label></div>
+			<div class="radioButtonHolder"><input class="radiobutton" name="radio_group5" type="radio" value="3"/><label class="radioText">3</label></div><!-- end of 1st question -->	
+
+			<div class="questionText">2. Enter datatype of arguments :</div>
+			<div class="radioButtonHolder"><input class="radiobutton" name="radio_group6" type="radio" value="int"/><label class="radioText">int</label></div>
+			<div class="radioButtonHolder"><input class="radiobutton" name="radio_group6" type="radio" value="float"/><label class="radioText">float</label></div><!-- end of 2nd question -->	
+
+			<div class="questionTextRich">3. Enter return datatype of the function :</div>
+			<div class="radioButtonHolder"><input class="radiobutton" name="radio_group7" type="radio" value="int"/><label class="radioText">int</label></div>
+			<div class="radioButtonHolder"><input class="radiobutton" name="radio_group7" type="radio" value="float"/><label class="radioText">float</label></div><!-- end of 3rd question -->		
+
+			<div class="questionTextRich">4. Choose formula for area of the RightAngleTriangle :</div>
+			<div class="radioButtonHolder"><input class="radiobutton" name="radio_group8" type="radio" value="a*a"/><label class="radioText">a*a</label></div>
+			<div class="radioButtonHolder"><input class="radiobutton" name="radio_group8" type="radio" value="(a*b)/2"/><label class="radioText">(a*b)/2</label></div>
+			<div class="radioButtonHolder"><input class="radiobutton" name="radio_group8" type="radio" value="2*π*a"/><label class="radioText">2*π*a</label></div><!-- end of 4th question -->	
+
+			<button class="button okButton" id="okRightAngleTriangle">OK</button>	
+		</div><!-- end of question block of RightAngleTriangle -->	
+		<div class="questionBlock hide" id="questionTriangle">
+			<div class="questionText">1. Enter number of arguments :</div>
+			<div class="radioButtonHolder"><input class="radiobutton" name="radio_group9" type="radio" value="1"/><label class="radioText">1</label></div>
+			<div class="radioButtonHolder"><input class="radiobutton" name="radio_group9" type="radio" value="2"/><label class="radioText">2</label></div>
+			<div class="radioButtonHolder"><input class="radiobutton" name="radio_group9" type="radio" value="3"/><label class="radioText">3</label></div><!-- end of 1st question -->		
+
+			<div class="questionText">2. Enter datatype of arguments :</div>
+			<div class="radioButtonHolder"><input class="radiobutton" name="radio_group10" type="radio" value="int"/><label class="radioText">int</label></div>
+			<div class="radioButtonHolder"><input class="radiobutton" name="radio_group10" type="radio" value="float"/><label class="radioText">float</label></div><!-- end of 2nd question -->	
+
+			<div class="questionTextRich">3. Enter return datatype of the function :</div>
+			<div class="radioButtonHolder"><input class="radiobutton" name="radio_group11" type="radio" value="int"/><label class="radioText">int</label></div>
+			<div class="radioButtonHolder"><input class="radiobutton" name="radio_group11" type="radio" value="float"/><label class="radioText">float</label></div><!-- end of 3rd question -->	
+
+			<div class="questionTextRich">4. Choose formula for area of the triangle :</div>
+			<div class="radioButtonHolder"><input class="radiobutton" name="radio_group12" type="radio" value="a*a"/><label class="radioText">a*a</label></div>
+			<div class="radioButtonHolder"><input class="radiobutton" name="radio_group12" type="radio" value="pi*a*a"/><label class="radioText">π*a*a</label></div>
+			<div class="radioButtonHolder"><input class="radiobutton" name="radio_group12" type="radio" value="correct"/><label class="radioText">(√3/4.0)*a*a</label></div><!-- end of 4th question -->	
+
+			<button class="button okButton" id="okTriangle">OK</button>	
+		</div><!-- end of question block of triangle -->	
+		<div class="questionBlock hide" id="questionCircle">
+			<div class="questionText">1. Enter number of arguments :</div>
+			<div class="radioButtonHolder"><input class="radiobutton" name="radio_group13" type="radio" value="1"/><label class="radioText" for="male">1</label></div>
+			<div class="radioButtonHolder"><input class="radiobutton" name="radio_group13" type="radio" value="2"/><label class="radioText" for="male">2</label></div>
+			<div class="radioButtonHolder"><input class="radiobutton" name="radio_group13" type="radio" value="3"/><label class="radioText" for="male">3</label></div><!-- end of 1st question -->		
+
+			<div class="questionText">2. Enter datatype of arguments :</div>
+			<div class="radioButtonHolder"><input class="radiobutton" name="radio_group14" type="radio" value="int"/><label class="radioText">int</label></div>
+			<div class="radioButtonHolder"><input class="radiobutton" name="radio_group14" type="radio" value="float"/><label class="radioText">float</label></div><!-- end of 2nd question -->	
+
+			<div class="questionTextRich">3. Enter return datatype of the function :</div>
+			<div class="radioButtonHolder"><input class="radiobutton" name="radio_group15" type="radio" value="int"/><label class="radioText">int</label></div>
+			<div class="radioButtonHolder"><input class="radiobutton" name="radio_group15" type="radio" value="float"/><label class="radioText">float</label></div><!-- end of 3rd question -->		
+
+			<div class="questionTextRich">4. Choose formula for area of the circle :</div>
+			<div class="radioButtonHolder"><input class="radiobutton" name="radio_group16" type="radio" value="a*a"/><label class="radioText">a*a</label></div>
+			<div class="radioButtonHolder"><input class="radiobutton" name="radio_group16" type="radio" value="pi*a*a"/><label class="radioText">π*a*a</label></div>
+			<div class="radioButtonHolder"><input class="radiobutton" name="radio_group16" type="radio" value="incorrect"/><label class="radioText">(√3/4.0)*a*a</label></div><!-- end of 4th question -->	
+
+			<button class="button okButton" id="okCircle">OK</button>	
+		</div><!-- end of question block of circle -->	
+		<div class="questionBlock hide" id="calculateArea">
+			<div class="programInitialization">int main() {<br/> float totalArea;</div>
+			<div class="computeArea">totalArea = </div>
+			<div id="inputBoxSection"><input class="textArea" type="text"/><input class="textArea" type="text"/><input class="textArea" type="text"/><input class="textArea" type="text"/><input class="textArea" type="text"/><input class="textArea" type="text"/><input class="textArea" type="text"/></div>	
+			<div class="programTail">  printf("Total Area : %f/n", totalArea);<br/>  return 0;<br/>}</div>
+		
+			<button class="button okButton" id="btnExecute">EXECUTE</button>	
+		</div><!-- end of tatal area calculation block -->	
+	</div><!-- end of inputDivisionBody -->
+</div><!-- end of inputDivision -->
+<div class="executionDivision">
+	<div class="executionDivisionTitle"><div class="executionPic"></div><div class="executionText">Step Execution</div></div>
+	<div class="stepExecutionDisplay">
+		<div class="functionForSquare"><span class="textColor">//function for square</span><br/><div id="functionSquare"></div></div>
+		<div class="functionForRightAngleTriangle"><span class="textColor">//function for RightAngleTriangle</span><br/><div id="functionRightAngleTriangle"></div></div>
+		<div class="functionForTriangle"><span class="textColor">//function for triangle</span><br/><div id="functionTriangle"></div></div>
+		<div class="functionForCircle"><span class="textColor">//function for circle</span><br/><div id="functionCircle"></div></div>
+	</div><!-- end of stepExecutionDisplay -->
+</div><!-- end of executionDivision -->
+<div class="outputDivision"> 
+	<div class="outputDivisionTitle"><div class="outputPic"></div><div class="outputText">Code Output</div></div>
+	<div class="resultDisplay" id="resultDisplay">
+		<div class="imageBlock" id="imageBlock">
+			<div class="imageSquare" id="imageSquare"><img class="tick hide" id="tickSquare" src="tick.png"/></div>
+			<div class="imageRightAngleTriangle" id="imageRightAngleTriangle"><img class="tick hide" id="tickRightAngleTriangle" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR1lHFh0pSPoDWZpHkped5tcX6WpRJkC7EOEQ&usqp=CAU"/></div>
+			<div class="imageTriangle" id="imageTriangle"><img class="tick hide" id="tickTriangle" src="tick.png"/></div>
+			<div class="imageCircle" id="imageCircle"><img class="tick hide" id="tickCircle" src="tick.png"/></div>
+		</div><!-- end of imageBlock -->
+		<div class="imageComplex hide" id="imageComplex"></div>
+	</div><!-- end of resultDisplay -->
+</div><!-- end of outputDivision -->
+
+
+</body></html>
