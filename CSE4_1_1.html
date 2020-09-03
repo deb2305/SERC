@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html><head><!--Google Tag Manager--><script class="gtm">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&amp;l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W59SWTR');</script><!--End Google Tag Manager-->
+<link href="array.css" rel="stylesheet" type="text/css"/>
+<!-- &lt;link href = 'http://fonts.googleapis.com/css?family=Inconsolata' rel = 'stylesheet' type = 'text/css' &gt; -->
+<script src="array.js"></script>
+<title>Computer-Programming</title>
+</head>
+
+<body><!--Google Tag Manager (noscript)--><noscript class="gtm"><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-W59SWTR" style="display:none;visibility:hidden" width="0"></iframe></noscript><!--End Google Tag Manager (noscript)-->
+<div id="header"> Array ( Insertion Sort ) </div>
+<a href="../../simulation.html"><div class="vlabsIcon"></div></a>
+
+<div class="inputDivision">
+	<div class="inputDivisionTitle"><div class="initializePic"></div><div class="initializeText">Initialize</div></div>
+	<div class="inputDivisionBody">
+		<div class="arraySizeInputBlock">
+			<div class="arraySizeText">Enter Array Size</div>
+			<input class="arraySizeInputField" id="inputArraySize" type="text"/>
+			<button class="button okButton" id="btnOk">OK</button>
+		</div><!-- end of arraySizeInputBlock -->
+		<div class="randomRadioButtonDivision" id="inputButtonRadio">
+            <div class="randomRadioButtonDivision"><input class="radiobutton" id="btnRandom" name="radio_group" type="radio"/><label class="radioText" for="male">Generate Random Values</label></div><!-- end of randomRadioButtonDivision -->
+            <div class="enterValueRadioButtonDivision"><input class="radiobutton" id="btnManual" name="radio_group" type="radio"/><label class="radioText" for="male">Enter Values Manually <br><br><!-- end of enterValueRadioButtonDivision -->
+			<textarea class="arrayInputArea" id="userInput" name="firstname" placeholder="Enter values here in comma seperated format or seperated with space" required></textarea></label></div>
+          	<div class="buttonHolder"><button class="buttonDisable startButton" disabled="" id="btnStart">Start</button><button class="buttonDisable nextButton" disabled="" id="btnNext">Next</button></div><!-- end of buttonHolder -->
+        </div><!-- end of radioButtonDivision -->
+    </div><!-- end of inputDivisionBody -->
+</div><!-- end of inputDivision -->
+
+<div class="executionDivision">
+	<div class="executionDivisionTitle"><div class="executionPic"></div><div class="executionText">Step Execution</div></div>
+	<div class="stepExecutionDisplay">
+		<div class="hide" id="1-dArray">
+			<div id="line1"> int main(){ </div>
+			<div id="line2"> int i, j, size, key ; </div>
+			<div id="line3"> int A[size]; </div>
+			<div id="line4"> for( i = 1 ; i &lt; size ; i++ ) </div>
+			<div id="line5"> { </div>
+			<div id="line6" style="padding-left:5%;"> key = A[i]; </div>
+			<div id="line7" style="padding-left:5%;"> j = i - 1; </div>
+			<div id="line8" style="padding-left:5%;"> while ( j &gt;= 0 &amp;&amp; A[j] &gt; key  ) </div>
+			<div id="line9" style="padding-left:5%;"> { </div>
+			<div id="line10" style="padding-left:10%;"> A[j+1] = A[j];  </div>
+			<div id="line11" style="padding-left:10%;"> j--; </div>
+			<div id="line12" style="padding-left:5%;"> } </div>
+			<div id="line13" style="padding-left:5%;"> A[j+1] = key; </div>
+			<div id="line14"> } </div>
+			<div id="line15"> return 0 ; </div>
+			<div id="line16"> } </div>
+		</div><!-- end of 1-dArray -->
+	</div><!-- end of stepExecutionDisplay -->
+</div><!-- end of executionDivision -->
+	
+<div class="outputDivision"> 
+	<div class="outputDivisionTitle"><div class="outputPic"></div><div class="outputText">Code Output</div></div>
+	<div class="resultDisplay" id="resultDisplay">
+		<div class="KeyPointerDisplayDivision">
+			<div class="sortedKeyLabel"></div>
+			<div class="sortedKeyLabelText">Sorted</div>		
+			<div class="unsortedKeyLabel"></div>
+			<div class="unsortedKeyLabelText">Unsorted</div>
+			<div class="keyPositionLabel"></div>
+			<div class="keyPositionLabelText">Key Position</div>
+		</div><!-- end of KeyPointerDisplayDivision -->
+		<div class="sortingDivision" id="sortingDiv"></div>
+		<div class="currentKeyPositionIndicator">
+			<div class="currentKeyValue" id="key">0</div>
+			<div class="textKeyValue">Key Value</div>
+		</div><!-- end of currentKeyPositionIndicator -->
+	</div><!-- end of resultDisplay -->
+</div><!-- end of outputDivision -->
+
+</body></html>
